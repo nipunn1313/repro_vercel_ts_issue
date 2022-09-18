@@ -10,7 +10,7 @@ If you run `npx tsc` - it won't give an error, because it's a newer version of t
 
 # Suggested fixes
 
-I find it unusual that `vercel dev` is running typescript at API execution time. I would expect
+I find it unusual that `vercel dev` is running its own typescript at API execution time. I would expect
 it to
 - Run the version of TS in my repo's package.json (not the version bundled with vercel)
 - Run typescript on save (rather than after API execution)
