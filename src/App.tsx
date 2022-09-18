@@ -2,6 +2,12 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 
+// Hello World.
+fetch("/api/hello")
+  .then(response => response.text())
+  .then(text => console.log(text))
+  .catch(error => console.log(error));
+
 function App() {
   const [count, setCount] = useState(0)
 
